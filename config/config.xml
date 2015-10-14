@@ -1,19 +1,23 @@
-# This is the main Hotspot Wifi configuration file. It contains the
-# configuration directives that give the website its instructions.
-#
-#
-# <Policy location="" auto-forward="true" captive-portal="">
-#
-#	 <Zone>
-#	 	<Invocation-code></Invocation-code>
-#	 </Zone>
-#
-# </Policy>
+<!-- This is the main Hotspot Wifi configuration file. It contains the configuration directives that give the website its instructions. -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<policy>
+	<location></location>
+	<alias></alias>
+	<auto-forward></auto-forward>
+	<captive-portal></captive-portal>
+	<zone>
+		<invocation-code></invocation-code>
+	</zone>
 
-<Policy location="Flinders Street Station" alias="fss" auto-forward="true" captive-portal="http://10.201.0.1:8002/captiveportal-pass3.html">
+</policy>
 
-	<Zone>
-		<Invocation-code>
+<policy>
+	<location>Flinders Street Station</location>
+	<alias>fss</alias>
+	<auto-forward>true</auto-forward>
+	<captive-portal>http://10.201.0.1:8002/captiveportal-pass3.html</captive-portal>
+	<zone>
+		<invocation-code>
 			<!--/*
 			  *
 			  * Revive Adserver Javascript Tag
@@ -35,16 +39,25 @@
 			   if (document.context) document.write ("&context=" + escape(document.context));
 			   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
 			   document.write ("'><\/scr"+"ipt>");
-			//]]>--></script><noscript><a href='http://adserver.netbaywifi.com.au/adserver/www/delivery/ck.php?n=abe0ff42&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://adserver.netbaywifi.com.au/adserver/www/delivery/avw.php?zoneid=23&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=abe0ff42' border='0' alt='' /></a></noscript>
-		</Invocation-code>
-	</Zone>
+			//]]>-->
+			</script>
+			<noscript>
+				<a href='http://adserver.netbaywifi.com.au/adserver/www/delivery/ck.php?n=abe0ff42&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'>
+					<img src='http://adserver.netbaywifi.com.au/adserver/www/delivery/avw.php?zoneid=23&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=abe0ff42' border='0' alt='' />
+				</a>
+			</noscript>
+		</invocation-code>
+	</zone>
 
-</Policy>
+</policy>
 
-<Policy location="Melbourne Central Station" alias="mcs" auto-forward="true" captive-portal="http://10.202.0.1:8004/captiveportal-pass-mcs.html">
-
-	<Zone>
-		<Invocation-code>
+<policy>
+	<location>Melbourne Central Station</location>
+	<alias>mcs</alias>
+	<auto-forward>true</auto-forward>
+	<captive-portal>http://10.202.0.1:8004/captiveportal-pass-mcs.html</captive-portal>
+	<zone>
+		<invocation-code>
 			<!--/*
 			  *
 			  * Revive Adserver Javascript Tag
@@ -66,8 +79,14 @@
 			   if (document.context) document.write ("&context=" + escape(document.context));
 			   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
 			   document.write ("'><\/scr"+"ipt>");
-			//]]>--></script><noscript><a href='http://adserver.netbaywifi.com.au/adserver/www/delivery/ck.php?n=abe0ff42&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://adserver.netbaywifi.com.au/adserver/www/delivery/avw.php?zoneid=23&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=abe0ff42' border='0' alt='' /></a></noscript>
-		</Invocation-code>
-	</Zone>
+			//]]>-->
+			</script>
+			<noscript>
+				<a href='http://adserver.netbaywifi.com.au/adserver/www/delivery/ck.php?n=abe0ff42&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'>
+					<img src='http://adserver.netbaywifi.com.au/adserver/www/delivery/avw.php?zoneid=23&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=abe0ff42' border='0' alt='' />
+				</a>
+			</noscript>
+		</invocation-code>
+	</zone>
 
-</Policy>
+</policy>
